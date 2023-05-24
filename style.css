@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-font: 'Barlow', sans-serifs;
+    --title-font: 'Fraunces', serif;
+    --red: #fe7867;
+    --yellow: #fad400;
+    --gray: #a7abae;
+    --white: #ffffff;
+    --graphic-text: #25564b;
+    --photography-text: #19536b;
+    --footer: #1f6656;
+    --background: #FFFBFB;
+    --footer-bg: #90d4c5;
+}
+
+body {
+    font-family: var(--text-font);
+    background-color: var(--background);
+}
+
+header {
+    height: 80vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: var(--white);
+    padding: 32px 16px;
+    display: grid;
+    place-items: start center;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header h1 {
+    font-family: var(--title-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+
+.info img {
+    width: 100%;
+}
+
+.description {
+    display: grid;
+    padding: 80px 0px;
+    place-items: center;
+    height: 500px;
+}
+
+.description__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+}
+
+.description__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+    line-height: 2rem;
+    padding: 0px 12px;
+}
+
+.description__link {
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.line {
+    height: 12px;
+    width: 110%;
+    position: absolute;
+    left: -5%;
+    bottom: -12%;
+    z-index: -1;
+    opacity: .3;
+    border-radius: 10px;
+}
+
+.line-yellow {
+    background-color: var(--yellow);
+}
+
+.line-red {
+    background-color: var(--red);
+}
+
+.container{
+    height: 600px;
+    background-size: cover;
+}
+
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+
+.container .description{
+    height: 106%;
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.graphic *{
+    color: var(--graphic-text);
+}
+
+.photography *{
+    color: var(--photography-text);
+}
+
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1rem;
+    color: var(--gray);
+    text-align: center;
+    padding: 32px 0;
+    letter-spacing: .2rem;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+    text-align: center;
+}
+
+.client__avatar{
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.client__avatar.emily{
+    background-image: url(./images/image-emily.jpg);
+}
+
+.client__avatar.thomas{
+    background-image: url(./images/image-thomas.jpg);
+}
+
+.client__avatar.jennie{
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.client__text{
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: .7;
+    line-height: 2rem;
+    padding: 0 12px;
+}
+
+.client__name{
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding: 12px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.images img{
+    width: 100%;
+} 
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    color: var(--footer);
+    height: 50vh;
+    background-color: var(--footer-bg);
+    padding: 64px 16px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+footer .logo{
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: var(--text-font);
+}
+
+.options{
+    display: flex;
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 42px;
+    opacity: .7;
+}
+
+.social{
+    display: flex;
+    gap: 32px;
+}
+
+.social img{
+    width: 1.4rem;
+}
